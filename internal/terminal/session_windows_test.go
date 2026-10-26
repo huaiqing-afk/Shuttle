@@ -18,7 +18,7 @@ func TestConPTYUnicodeInputResizeAndExit(t *testing.T) {
 	}
 	var mu sync.Mutex
 	var output bytes.Buffer
-	s, err := Start(shell, []string{"-NoLogo", "-NoProfile", "-Command", "$x=[Console]::ReadLine(); [Console]::WriteLine('RESULT:'+ $x)"}, t.TempDir(), func(data []byte) {
+	s, err := Start(shell, []string{"-NoLogo", "-NoProfile", "-Command", "[Console]::InputEncoding = [System.Text.Encoding]::UTF8; [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $x=[Console]::ReadLine(); [Console]::WriteLine('RESULT:'+ $x)"}, t.TempDir(), func(data []byte) {
 		mu.Lock()
 		output.Write(data)
 		mu.Unlock()
