@@ -1,0 +1,36 @@
+// Settings for Windows Terminal — sample fixture.
+// Comments and trailing commas must survive Shuttle's surgical edits.
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+
+    "profiles": {
+        "defaults": {
+            "fontFace": "Cascadia Mono",
+            "fontSize": 12,
+        },
+        // an unrelated user profile we must never touch
+        "list": [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "hidden": false,
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "name": "用户自建 Profile",
+                "hidden": false,
+            },
+        ],
+    },
+
+    "actions": [
+        { "command": "newTab", "keys": "ctrl+shift+t" },
+    ],
+
+    // user's own theme, unrelated
+    "schemes": [],
+    "theme": "system",
+}

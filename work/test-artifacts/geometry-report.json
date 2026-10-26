@@ -1,0 +1,652 @@
+[
+  {
+    "name": "1080x720-100",
+    "css": [
+      1080,
+      720
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 235,
+        "width": 1080,
+        "height": 720
+      },
+      "collapsed": {
+        "colors": 165,
+        "width": 1080,
+        "height": 720
+      },
+      "panel": {
+        "colors": 335,
+        "width": 1080,
+        "height": 720
+      },
+      "inventory": {
+        "colors": 487,
+        "width": 1080,
+        "height": 720
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1080x720-125",
+    "css": [
+      864,
+      576
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 322,
+        "width": 1080,
+        "height": 720
+      },
+      "collapsed": {
+        "colors": 207,
+        "width": 1080,
+        "height": 720
+      },
+      "panel": {
+        "colors": 385,
+        "width": 1080,
+        "height": 720
+      },
+      "inventory": {
+        "colors": 456,
+        "width": 1080,
+        "height": 720
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1080x720-150",
+    "css": [
+      720,
+      480
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 409,
+        "width": 1080,
+        "height": 720
+      },
+      "collapsed": {
+        "colors": 264,
+        "width": 1080,
+        "height": 720
+      },
+      "panel": {
+        "colors": 390,
+        "width": 1080,
+        "height": 720
+      },
+      "inventory": {
+        "colors": 456,
+        "width": 1080,
+        "height": 720
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1440x900-100",
+    "css": [
+      1440,
+      900
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 244,
+        "width": 1440,
+        "height": 900
+      },
+      "collapsed": {
+        "colors": 179,
+        "width": 1440,
+        "height": 900
+      },
+      "panel": {
+        "colors": 407,
+        "width": 1440,
+        "height": 900
+      },
+      "inventory": {
+        "colors": 548,
+        "width": 1440,
+        "height": 900
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1440x900-125",
+    "css": [
+      1152,
+      720
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 340,
+        "width": 1440,
+        "height": 900
+      },
+      "collapsed": {
+        "colors": 211,
+        "width": 1440,
+        "height": 900
+      },
+      "panel": {
+        "colors": 557,
+        "width": 1440,
+        "height": 900
+      },
+      "inventory": {
+        "colors": 648,
+        "width": 1440,
+        "height": 900
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1440x900-150",
+    "css": [
+      960,
+      600
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 388,
+        "width": 1440,
+        "height": 900
+      },
+      "collapsed": {
+        "colors": 273,
+        "width": 1440,
+        "height": 900
+      },
+      "panel": {
+        "colors": 564,
+        "width": 1440,
+        "height": 900
+      },
+      "inventory": {
+        "colors": 604,
+        "width": 1440,
+        "height": 900
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1920x1080-100",
+    "css": [
+      1920,
+      1080
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 253,
+        "width": 1920,
+        "height": 1080
+      },
+      "collapsed": {
+        "colors": 171,
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "colors": 463,
+        "width": 1920,
+        "height": 1080
+      },
+      "inventory": {
+        "colors": 513,
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1920x1080-125",
+    "css": [
+      1536,
+      864
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 316,
+        "width": 1920,
+        "height": 1080
+      },
+      "collapsed": {
+        "colors": 198,
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "colors": 561,
+        "width": 1920,
+        "height": 1080
+      },
+      "inventory": {
+        "colors": 655,
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "1920x1080-150",
+    "css": [
+      1280,
+      720
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 387,
+        "width": 1920,
+        "height": 1080
+      },
+      "collapsed": {
+        "colors": 250,
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "colors": 587,
+        "width": 1920,
+        "height": 1080
+      },
+      "inventory": {
+        "colors": 816,
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "864x576-100",
+    "css": [
+      864,
+      576
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 253,
+        "width": 864,
+        "height": 576
+      },
+      "collapsed": {
+        "colors": 174,
+        "width": 864,
+        "height": 576
+      },
+      "panel": {
+        "colors": 256,
+        "width": 864,
+        "height": 576
+      },
+      "inventory": {
+        "colors": 350,
+        "width": 864,
+        "height": 576
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "720x480-100",
+    "css": [
+      720,
+      480
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 257,
+        "width": 720,
+        "height": 480
+      },
+      "collapsed": {
+        "colors": 170,
+        "width": 720,
+        "height": 480
+      },
+      "panel": {
+        "colors": 242,
+        "width": 720,
+        "height": 480
+      },
+      "inventory": {
+        "colors": 289,
+        "width": 720,
+        "height": 480
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "720x448-100",
+    "css": [
+      720,
+      448
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 260,
+        "width": 720,
+        "height": 448
+      },
+      "collapsed": {
+        "colors": 176,
+        "width": 720,
+        "height": 448
+      },
+      "panel": {
+        "colors": 233,
+        "width": 720,
+        "height": 448
+      },
+      "inventory": {
+        "colors": 275,
+        "width": 720,
+        "height": 448
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  },
+  {
+    "name": "640x400-100",
+    "css": [
+      640,
+      400
+    ],
+    "problems": [],
+    "shellGap": 12,
+    "minSiblingGap": {
+      "gap": 12,
+      "pair": [
+        "input",
+        "input"
+      ]
+    },
+    "screenshots": {
+      "shell": {
+        "colors": 251,
+        "width": 640,
+        "height": 400
+      },
+      "collapsed": {
+        "colors": 184,
+        "width": 640,
+        "height": 400
+      },
+      "panel": {
+        "colors": 218,
+        "width": 640,
+        "height": 400
+      },
+      "inventory": {
+        "colors": 244,
+        "width": 640,
+        "height": 400
+      }
+    },
+    "installPreview": {
+      "components": 6,
+      "preview": true,
+      "commands": 2
+    },
+    "inventoryGap": {
+      "gap": 12,
+      "pair": [
+        "button",
+        "button"
+      ]
+    }
+  }
+]

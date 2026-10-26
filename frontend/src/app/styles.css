@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* Shuttle 设计令牌 —— 夜航石墨 + 仪表琥珀 chrome；终端区 Tokyo Night（浅色为 Day 变体） */
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --background: #0d1017;
+  --card: #12161f;
+  --hover: #181d28;
+  --elevated: #1e2432;
+  --foreground: #e8ecf4;
+  --muted-foreground: #99a3b6;
+  --faint: #5f6b84;
+  --border: #242b3a;
+  --border-strong: #323b50;
+  --primary: #f0a63c;
+  --primary-hover: #ffbc55;
+  --primary-foreground: #231604;
+  --ring: #f0a63c;
+  --destructive: #f07b7b;
+  --success: #5bc97f;
+  --term: #16161e;
+  --term-fg: #c0caf5;
+  --claude: #9db2f5;
+  --codex: #5fc9c0;
+  --shell: #a9b4c7;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: #eef1f6;
+  --card: #f7f8fb;
+  --hover: #e9edf4;
+  --elevated: #dde3ee;
+  --foreground: #1b2233;
+  --muted-foreground: #4e5871;
+  --faint: #7a8599;
+  --border: #d3dae6;
+  --border-strong: #b9c3d4;
+  --primary: #b97a12;
+  --primary-hover: #96650a;
+  --primary-foreground: #fff8ec;
+  --ring: #b97a12;
+  --destructive: #c43d38;
+  --success: #22854e;
+  --term: #f4f5f9;
+  --term-fg: #343b58;
+  --claude: #4a63c9;
+  --codex: #0e7c74;
+  --shell: #5a6478;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-card-foreground: var(--foreground);
+  --color-hover: var(--hover);
+  --color-elevated: var(--elevated);
+  --color-muted: var(--hover);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-faint: var(--faint);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-term: var(--term);
+  --color-term-fg: var(--term-fg);
+  --color-claude: var(--claude);
+  --color-codex: var(--codex);
+  --color-shell: var(--shell);
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", "Microsoft YaHei UI", sans-serif;
+  --font-mono: "Cascadia Code", "Maple Mono NF CN", Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+button:not(:disabled) { cursor: pointer; }
+.xterm, .xterm .xterm-viewport { height: 100%; }
+.xterm { background-color: var(--term); }
+.xterm .xterm-viewport { scrollbar-width: thin; }
+.tab-loading { animation: tab-sweep 1.1s linear infinite; }
+@keyframes tab-sweep {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(380%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

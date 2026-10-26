@@ -1,0 +1,281 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2026-10-25T13:04:56.424-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "ZhipuAI.ZCode",
+					"Version" : "3.16.3"
+				},
+				{
+					"PackageIdentifier" : "Tencent.WorkBuddy",
+					"Version" : "5.6.2"
+				},
+				{
+					"PackageIdentifier" : "ClashVergeRev.ClashVergeRev",
+					"Version" : "2.5.8"
+				},
+				{
+					"PackageIdentifier" : "JetBrains.DataGrip",
+					"Version" : "2026.1.3"
+				},
+				{
+					"PackageIdentifier" : "Docker.DockerDesktop",
+					"Version" : "4.77.0"
+				},
+				{
+					"PackageIdentifier" : "Git.Git",
+					"Version" : "2.54.0"
+				},
+				{
+					"PackageIdentifier" : "JetBrains.IntelliJIDEA",
+					"Version" : "2026.1.3"
+				},
+				{
+					"PackageIdentifier" : "Bopsoft.Listary",
+					"Version" : "6.2"
+				},
+				{
+					"PackageIdentifier" : "PremiumSoft.NavicatPremium",
+					"Version" : "17.1.11"
+				},
+				{
+					"PackageIdentifier" : "RARLab.WinRAR",
+					"Version" : "7.22.0"
+				},
+				{
+					"PackageIdentifier" : "Obsidian.Obsidian",
+					"Version" : "1.12.7"
+				},
+				{
+					"PackageIdentifier" : "Ruihu.Apifox",
+					"Version" : "2.8.51"
+				},
+				{
+					"PackageIdentifier" : "Starship.Starship",
+					"Version" : "1.27.0"
+				},
+				{
+					"PackageIdentifier" : "appmakes.Typora",
+					"Version" : "1.2.4"
+				},
+				{
+					"PackageIdentifier" : "GoLang.Go",
+					"Version" : "1.27.0"
+				},
+				{
+					"PackageIdentifier" : "GitHub.cli",
+					"Version" : "2.103.0"
+				},
+				{
+					"PackageIdentifier" : "OpenJS.NodeJS.LTS",
+					"Version" : "24.16.0"
+				},
+				{
+					"PackageIdentifier" : "FireDaemon.OpenSSL",
+					"Version" : "4.0.1"
+				},
+				{
+					"PackageIdentifier" : "Apple.AppleMobileDeviceSupport",
+					"Version" : "19.4.0.10"
+				},
+				{
+					"PackageIdentifier" : "farion1231.CC-Switch",
+					"Version" : "4.0.4"
+				},
+				{
+					"PackageIdentifier" : "Alibaba.Quark",
+					"Version" : "6.9.1.868"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge",
+					"Version" : "155.0.4283.45"
+				},
+				{
+					"PackageIdentifier" : "Tencent.QQ.NT",
+					"Version" : "9.9.31.49738"
+				},
+				{
+					"PackageIdentifier" : "Sogou.SogouInput",
+					"Version" : "16.5.0.3885"
+				},
+				{
+					"PackageIdentifier" : "Youqu.ToDesk",
+					"Version" : "4.9.7.3"
+				},
+				{
+					"PackageIdentifier" : "Tencent.WeChat.Universal",
+					"Version" : "4.1.10.27"
+				},
+				{
+					"InitialOverrideArguments" : "--quiet --wait --norestart --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended",
+					"PackageIdentifier" : "Microsoft.VisualStudio.2022.BuildTools",
+					"Version" : "17.14.39"
+				},
+				{
+					"PackageIdentifier" : "ByteDance.Douyin",
+					"Version" : "8.7.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86",
+					"Version" : "14.50.35719.0"
+				},
+				{
+					"PackageIdentifier" : "DEVCOM.JetBrainsMonoNerdFont",
+					"Version" : "3.3.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64",
+					"Version" : "14.50.35719.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK.10.0.26100",
+					"Version" : "10.0.26100.7705"
+				},
+				{
+					"PackageIdentifier" : "Tencent.WeixinDevTools",
+					"Version" : "2.01.2510290"
+				},
+				{
+					"PackageIdentifier" : "Baidu.BaiduNetdisk",
+					"Version" : "8.5.5"
+				},
+				{
+					"PackageIdentifier" : "Google.Antigravity",
+					"Version" : "2.23.1"
+				},
+				{
+					"PackageIdentifier" : "lbjlaq.AntigravityTools",
+					"Version" : "4.9.6"
+				},
+				{
+					"PackageIdentifier" : "BurntSushi.ripgrep.MSVC",
+					"Version" : "15.2.0"
+				},
+				{
+					"PackageIdentifier" : "Cloudflare.cloudflared",
+					"Version" : "2026.5.2"
+				},
+				{
+					"PackageIdentifier" : "ByteDance.Feishu",
+					"Version" : "8.3.14"
+				},
+				{
+					"PackageIdentifier" : "Gyan.FFmpeg.Shared",
+					"Version" : "9.0.1"
+				},
+				{
+					"PackageIdentifier" : "Rustlang.Rustup",
+					"Version" : "1.29.0"
+				},
+				{
+					"PackageIdentifier" : "Atlassian.Sourcetree",
+					"Version" : "3.4.32"
+				},
+				{
+					"PackageIdentifier" : "SST.OpenCodeDesktop",
+					"Version" : "2.0.30"
+				},
+				{
+					"PackageIdentifier" : "nilaoda.N_m3u8DL-RE",
+					"Version" : "0.6.0-beta"
+				},
+				{
+					"PackageIdentifier" : "rtk-ai.rtk",
+					"Version" : "1.0.1"
+				},
+				{
+					"PackageIdentifier" : "Telegram.TelegramDesktop",
+					"Version" : "7.2.5"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode",
+					"Version" : "1.142.0"
+				},
+				{
+					"PackageIdentifier" : "ByteDance.SodaMusic",
+					"Version" : "3.5.1"
+				},
+				{
+					"PackageIdentifier" : "Anysphere.Cursor",
+					"Version" : "3.27.12"
+				},
+				{
+					"PackageIdentifier" : "Anthropic.Claude",
+					"Version" : "3.6556.2.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.AppInstaller",
+					"Version" : "1.29.380.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.Native.Runtime",
+					"Version" : "2.2.28604.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Outlook",
+					"Version" : "1.2026.520.400"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell",
+					"Version" : "7.6.8.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.UI.Xaml.2.8",
+					"Version" : "8.2511.26001.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14",
+					"Version" : "14.0.33728.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCLibs.14",
+					"Version" : "14.0.33519.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.4",
+					"Version" : "1.4.7"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.7",
+					"Version" : "1.7.9"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.8",
+					"Version" : "> 1.8.10"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.2",
+					"Version" : "2.5.1.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal",
+					"Version" : "1.24.12741.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WSL",
+					"Version" : "2.7.3.0"
+				},
+				{
+					"PackageIdentifier" : "OpenAI.ChatGPT",
+					"Version" : "26.1021.3705.0"
+				},
+				{
+					"PackageIdentifier" : "Python.PythonInstallManager",
+					"Version" : "26.4.240.0"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://cdn.winget.microsoft.com/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.29.380"
+}

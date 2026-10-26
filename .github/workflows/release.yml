@@ -1,0 +1,101 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Release Tag (e.g. v0.1.0)'
+        required: false
+        default: 'v0.1.0'
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    name: Build & Release Shuttle (Windows)
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Frontend Dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build Frontend
+        working-directory: frontend
+        run: npm run build
+
+      - name: Install Wails CLI
+        run: |
+          go install github.com/wailsapp/wails/v2/cmd/wails@v2.17.0
+          wails doctor
+
+      - name: Build Shuttle Executable
+        run: |
+          wails build -platform windows/amd64 -clean
+
+      - name: Verify Build Artifact
+        shell: pwsh
+        run: |
+          if (-not (Test-Path "build/bin/Shuttle.exe")) {
+            throw "build/bin/Shuttle.exe was not generated"
+          }
+          $item = Get-Item "build/bin/Shuttle.exe"
+          Write-Host "Built Shuttle.exe successfully, size: $($item.Length) bytes"
+
+      - name: Package Release Assets
+        shell: pwsh
+        run: |
+          $tag = if ('${{ github.event_name }}' -eq 'workflow_dispatch') { '${{ github.event.inputs.tag_name }}' } else { '${{ github.ref_name }}' }
+          if (-not $tag) { $tag = 'v0.1.0' }
+          
+          # Create zip archive
+          $staging = "build/staging"
+          New-Item -ItemType Directory -Force -Path $staging | Out-Null
+          Copy-Item "build/bin/Shuttle.exe" -Destination "$staging/Shuttle.exe"
+          Copy-Item "LICENSE" -Destination "$staging/LICENSE"
+          Copy-Item "README.md" -Destination "$staging/README.md"
+          
+          Compress-Archive -Path "$staging/*" -DestinationPath "Shuttle-windows-amd64.zip" -Force
+          
+          # Generate SHA256 checksums
+          $exeHash = (Get-FileHash -Path "build/bin/Shuttle.exe" -Algorithm SHA256).Hash.ToLower()
+          $zipHash = (Get-FileHash -Path "Shuttle-windows-amd64.zip" -Algorithm SHA256).Hash.ToLower()
+          
+          "$exeHash  Shuttle.exe`n$zipHash  Shuttle-windows-amd64.zip" | Set-Content -Path "checksums.txt" -Encoding utf8
+          Get-Content "checksums.txt"
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
+          name: Shuttle ${{ github.event.inputs.tag_name || github.ref_name }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          files: |
+            build/bin/Shuttle.exe
+            Shuttle-windows-amd64.zip
+            checksums.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

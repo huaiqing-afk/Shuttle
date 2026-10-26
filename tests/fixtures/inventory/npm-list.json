@@ -1,0 +1,49 @@
+{
+  "name": "npm",
+  "dependencies": {
+    "@anthropic-ai/claude-code": {
+      "version": "2.1.310",
+      "overridden": false
+    },
+    "@earendil-works/pi-coding-agent": {
+      "version": "1.3.0",
+      "overridden": false
+    },
+    "@larksuite/cli": {
+      "version": "1.0.94",
+      "overridden": false
+    },
+    "@mimo-ai/cli": {
+      "version": "0.1.7",
+      "overridden": false
+    },
+    "@oh-my-pi/pi-coding-agent": {
+      "version": "18.12.6",
+      "overridden": false
+    },
+    "@openai/codex": {
+      "version": "0.164.0",
+      "overridden": false
+    },
+    "apifox-cli": {
+      "version": "2.2.12",
+      "overridden": false
+    },
+    "defuddle": {
+      "version": "0.18.1",
+      "overridden": false
+    },
+    "pnpm": {
+      "version": "11.9.0",
+      "overridden": false
+    },
+    "rea-agents": {
+      "version": "6.7.0",
+      "overridden": false
+    },
+    "relay-radar": {
+      "version": "0.0.1-security",
+      "overridden": false
+    }
+  }
+}

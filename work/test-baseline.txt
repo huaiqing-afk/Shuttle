@@ -1,0 +1,14 @@
+2026-10-25 T10d-2 final verification
+RESOLVED (L04): internal/terminal TestConPTYCloseActiveProcess failed intermittently (close did not complete). Root cause: proc.Wait() was unbounded and ConPTY's ClosePseudoConsole only requests client exit; a busy child ignored it.
+Fix: session_windows.go now owns a process handle (OpenProcess), waits 1.5s after pty.Close, then TerminateProcess, with a bounded follow-up wait (LESSONS L04).
+Regression: TestCloseIsBoundedAndTerminatesChild (5 iterations x 3 runs); 200-iteration close stress passed; scripts/check.ps1 run 5x consecutively green.
+Desktop: built exe, opened a PowerShell terminal, closed the tab with Ctrl+Shift+W (child exited), then closed the app with no residual child (work/test-artifacts/terminal-close-desktop.ps1).
+Previous failing runs remain recorded below as history.
+
+scripts/check.ps1 initially passed before Wails packaging.
+Final run failed: internal/terminal TestConPTYCloseActiveProcess, session_windows_test.go:82 close did not complete (10s timeout); TempDir cleanup file in use.
+Isolated recheck reproduced the same failure. No terminal implementation changed in this batch. Cause not established; do not classify as a proven pre-existing baseline or bypass this gate.
+Configuration packages and bridge integration tests passed in the failed full run.
+Frontend typecheck, 7 tests, production build passed independently after bindings generation.
+Wails build -m -s passed; generator warning: Not found: time.Time.
+Isolated real desktop UIA preview/apply/operation-record/restore passed. Screenshot: work/test-artifacts/configuration-desktop.png.
